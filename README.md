@@ -1,4 +1,4 @@
-CalendarPlugin
+TestPlugin
 ==============
 
 Sample TestPlugin on Android. 
