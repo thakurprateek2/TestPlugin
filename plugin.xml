@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+ 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.devgirl.calendar"
+           id="com.phonegap.helloworld"
       version="0.1.0">
-    <name>Calendar</name>
-    <description>Sample PhoneGap Calendar Plugin</description>
+    <name>TestPlugin</name>
+    <description>Sample TestPlugin Plugin</description>
     <license>MIT</license>
-    <keywords>phonegap,calendar</keywords>
-
-
-    <js-module src="www/calendar.js" name="Calendar">
-        <clobbers target="window.calendar" />
+    <keywords>phonegap,testplugin</keywords>
+ 
+ 
+    <js-module src="www/testplugin.js" name="TestPlugin">
+        <clobbers target="window.testplugin" />
     </js-module>
-
+ 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
-                <param name="android-package" value="org.devgirl.calendar.Calendar"/>
+            <feature name="TestPlugin">
+                <param name="android-package" value="com.phonegap.helloworld.TestPlugin"/>
             </feature>
         </config-file>
-
-        <source-file src="src/android/Calendar.java" target-dir="src/org/devgirl/calendar" />      
+ 
+        <source-file src="src/android/TestPlugin.java" target-dir="src/com/phonegap/helloworld" />      
      </platform>          
 </plugin>
